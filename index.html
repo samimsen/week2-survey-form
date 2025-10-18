@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Sayfa başlığı  -->
+    <header>
+        <h1 id="title">Survey Form For CSS Practice</h1>
+    </header>
+    <main>
+        <!-- Sayfanın ana içeriği -->
+        <p id="desctription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, fugiat.</p>
+
+        <!-- Form başlangıcı -->
+        <form action="" id="survey-form">
+            <div id="text-group">
+                <div class="icon-group">
+                    <label for="name" id="name-label"><span class="material-icons" id="person-icon">person</span>Full
+                        Name</label>
+                    <input type="text" id="name">
+                </div>
+
+                <div class="icon-group">
+                    <label for="email" id="email-label"><span class="material-icons"
+                            id="mail-icon">mail</span>Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="icon-group">
+                    <label for="number" id="number-label"><span class="material-icons"
+                            id="age-icon">cake</span>Age</label>
+                    <input type="number" id="number" min="18" max="100" required>
+                </div>
+            </div>
+
+
+            <select id="dropdown" name="dropdown" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <div id="radio-group">
+                <div>
+                    <p>Where did you here us?</p>
+                </div>
+                <div>
+                    <div>
+                        <input type="radio" name="instagram" id="instagram" value="instagram">
+                        <label for="instagram">Instagram</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="linkedn" id="linkedn" value="linkedn">
+                        <label for="linkedn">Linkedn</label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="checkbox-group">
+                <input type="checkbox" name="term" id="term" value="Terms Of Service">
+                <label for="term">Terms Of Service</label>
+
+                <input type="checkbox" name="subscribe" id="subscribe" value="Subscribe For News">
+                <label for="subscribe">Subcscribe For News</label>
+            </div>
+
+            <textarea name="suggestions" id="suggestions" placeholder="Suggestions"></textarea>
+
+            <button type="submit">Sing Up</button>
+
+        </form>
+        <!-- Form sonu -->
+    </main>
+</body>
+
+</html>
